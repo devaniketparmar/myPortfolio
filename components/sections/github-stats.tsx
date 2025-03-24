@@ -39,8 +39,9 @@ export default function GitHubStats() {
         });
 
         // Calculate total stars and forks
-        const totalStars = repos.reduce((sum, repo) => sum + repo.stargazers_count, 0);
-        const totalForks = repos.reduce((sum, repo) => sum + repo.forks_count, 0);
+        const totalStars = Array.isArray(repos) ? repos.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0) : 0;
+        const totalForks = Array.isArray(repos) ? repos.reduce((sum, repo) => sum + (repo.forks_count || 0), 0) : 0;
+        
 
         // Calculate language distribution
         const languages: { [key: string]: number } = {};
