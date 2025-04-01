@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useState } from 'react';
 
 const projects = [
   {
@@ -11,6 +12,7 @@ const projects = [
     description: "A carbon footprint tracking application helping users minimize their environmental impact",
     image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9",
     tags: ["React", "Node.js", "MongoDB"],
+    technologies: ["Frontend", "Backend", "Database"],
     link: "#"
   },
   {
@@ -18,6 +20,7 @@ const projects = [
     description: "RESTful API serving plant-based recipes and nutritional information",
     image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352",
     tags: ["Express", "PostgreSQL", "Docker"],
+    technologies: ["Backend", "Database", "DevOps"],
     link: "#"
   },
   {
@@ -25,11 +28,20 @@ const projects = [
     description: "Sustainable e-commerce platform for eco-friendly products",
     image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc",
     tags: ["Next.js", "Stripe", "Tailwind"],
+    technologies: ["Frontend", "Backend"],
     link: "#"
   }
 ];
 
+const technologyCategories = ["All", "Frontend", "Backend", "Database", "DevOps"];
+
 export default function ProjectsSection() {
+  const [selectedTechnology, setSelectedTechnology] = useState("All");
+
+  const filteredProjects = projects.filter(project => 
+    selectedTechnology === "All" || project.technologies.includes(selectedTechnology)
+  );
+
   return (
     <section id="projects" className="min-h-screen py-20 relative">
       <div className="container mx-auto px-4">
@@ -41,13 +53,26 @@ export default function ProjectsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Featured Projects</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
             Sustainable solutions making a positive impact
           </p>
+          
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            {technologyCategories.map((tech) => (
+              <Button
+                key={tech}
+                variant={selectedTechnology === tech ? "default" : "outline"}
+                onClick={() => setSelectedTechnology(tech)}
+                className="transition-all duration-300"
+              >
+                {tech}
+              </Button>
+            ))}
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {projects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}

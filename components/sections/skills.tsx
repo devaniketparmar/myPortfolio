@@ -1,39 +1,148 @@
 "use client"
 
 import { motion } from 'framer-motion';
-import { Card } from '@/components/ui/card';
-import { Code2, Database, Globe, Layout, Server, Smartphone, Github as Git, Terminal } from 'lucide-react';
+import { 
+  siReact,
+  siNextdotjs,
+  siTypescript,
+  siTailwindcss,
+  siNodedotjs,
+  siExpress,
+  siPython,
+  siOpenjdk,
+  siPostgresql,
+  siMongodb,
+  siRedis,
+  siGraphql,
+  siGit,
+  siDocker,
+  siAmazonaws,
+  siLinux,
+  siJenkins,
+  siKubernetes,
+  siVisualstudiocode
+} from 'simple-icons';
 
 const skills = [
   {
+    name: "React",
+    icon: siReact,
     category: "Frontend",
-    icon: <Layout className="h-6 w-6" />,
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+    color: "#61DAFB"
   },
   {
+    name: "Next.js",
+    icon: siNextdotjs,
+    category: "Frontend",
+    color: "#000000"
+  },
+  {
+    name: "TypeScript",
+    icon: siTypescript,
+    category: "Frontend",
+    color: "#3178C6"
+  },
+  {
+    name: "Tailwind CSS",
+    icon: siTailwindcss,
+    category: "Frontend",
+    color: "#06B6D4"
+  },
+  {
+    name: "Node.js",
+    icon: siNodedotjs,
     category: "Backend",
-    icon: <Server className="h-6 w-6" />,
-    items: ["Node.js", "Express", "Python", "Java"]
+    color: "#339933"
   },
   {
+    name: "Express",
+    icon: siExpress,
+    category: "Backend",
+    color: "#000000"
+  },
+  {
+    name: "Python",
+    icon: siPython,
+    category: "Backend",
+    color: "#3776AB"
+  },
+  {
+    name: "Java",
+    icon: siOpenjdk,
+    category: "Backend",
+    color: "#007396"
+  },
+  {
+    name: "PostgreSQL",
+    icon: siPostgresql,
     category: "Database",
-    icon: <Database className="h-6 w-6" />,
-    items: ["PostgreSQL", "MongoDB", "Redis", "Supabase"]
+    color: "#4169E1"
   },
   {
-    category: "Web Technologies",
-    icon: <Globe className="h-6 w-6" />,
-    items: ["HTML5", "CSS3", "JavaScript", "REST APIs"]
+    name: "MongoDB",
+    icon: siMongodb,
+    category: "Database",
+    color: "#47A248"
   },
   {
-    category: "Mobile Development",
-    icon: <Smartphone className="h-6 w-6" />,
-    items: ["React Native", "Flutter", "iOS", "Android"]
+    name: "Redis",
+    icon: siRedis,
+    category: "Database",
+    color: "#DC382D"
   },
   {
-    category: "Development Tools",
-    icon: <Terminal className="h-6 w-6" />,
-    items: ["Git", "Docker", "AWS", "Linux"]
+    name: "GraphQL",
+    icon: siGraphql,
+    category: "Web",
+    color: "#E10098"
+  },
+  {
+    name: "React Native",
+    icon: siReact,
+    category: "Mobile",
+    color: "#61DAFB"
+  },
+  {
+    name: "Git",
+    icon: siGit,
+    category: "Tools",
+    color: "#F05032"
+  },
+  {
+    name: "Docker",
+    icon: siDocker,
+    category: "DevOps",
+    color: "#2496ED"
+  },
+  {
+    name: "AWS",
+    icon: siAmazonaws,
+    category: "Cloud",
+    color: "#232F3E"
+  },
+  {
+    name: "Linux",
+    icon: siLinux,
+    category: "Systems",
+    color: "#FCC624"
+  },
+  {
+    name: "Jenkins",
+    icon: siJenkins,
+    category: "DevOps",
+    color: "#D24939"
+  },
+  {
+    name: "Kubernetes",
+    icon: siKubernetes,
+    category: "DevOps",
+    color: "#326CE5"
+  },
+  {
+    name: "VS Code",
+    icon: siVisualstudiocode,
+    category: "Tools",
+    color: "#007ACC"
   }
 ];
 
@@ -54,31 +163,25 @@ export default function SkillsSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
               viewport={{ once: true }}
+              className="group relative"
             >
-              <Card className="p-6 backdrop-blur-lg bg-background/40 border-primary/20 hover:border-primary/40 transition-colors">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="text-primary">{skill.icon}</div>
-                  <h3 className="text-xl font-semibold">{skill.category}</h3>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {skill.items.map((item, itemIndex) => (
-                    <span
-                      key={itemIndex}
-                      className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </Card>
+              <div className="flex flex-col items-center justify-center p-6 rounded-xl bg-background/40 backdrop-blur-sm border border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+                <div 
+                  className="transition-transform duration-300 group-hover:scale-110 mb-3"
+                  style={{ color: skill.color }}
+                  dangerouslySetInnerHTML={{ __html: skill.icon.svg }}
+                />
+                <h3 className="text-sm font-medium">{skill.name}</h3>
+                <span className="text-xs text-muted-foreground mt-1">{skill.category}</span>
+              </div>
             </motion.div>
           ))}
         </div>
