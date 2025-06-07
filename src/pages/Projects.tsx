@@ -28,7 +28,7 @@ const Projects = () => {
         'A bio links and URL shortening platform that allows users to publish and monetize their online presence with a single, concise link. Developed a responsive frontend and a robust backend with admin panel for link management.',
       techStack: ['Laravel', 'React', 'PHP', 'MySQL'],
       features: ['URL Shortening', 'Bio Link Creation', 'Ad Monetization', 'Admin Dashboard', 'Responsive Design'],
-      liveLink: '#',
+      liveLink: 'Phlinks.com',
       githubLink: '#',
       logo: phlinklogo,
       logoColor: 'text-green-600',
@@ -129,15 +129,7 @@ const Projects = () => {
                         <ExternalLink className="w-4 h-4" />
                         <span>Live Demo</span>
                       </a>
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-2 border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:border-primary-blue hover:text-primary-blue transform hover:scale-105 transition-all duration-300"
-                      >
-                        <Github className="w-4 h-4" />
-                        <span>Code</span>
-                      </a>
+                      
                     </div>
                   </div>
                 </div>
