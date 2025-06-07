@@ -58,13 +58,13 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/aniketparmar',
+      href: 'https://github.com/devaniketparmar',
       color: 'hover:text-gray-900'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/aniketparmar',
+      href: 'https://linkedin.com/in/aniket-parmar-a42597239',
       color: 'hover:text-blue-600'
     }
   ];

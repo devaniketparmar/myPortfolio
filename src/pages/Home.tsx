@@ -43,7 +43,7 @@ const Home = () => {
 
             <div className="flex justify-center space-x-6 animate-fade-in-up">
               <a
-                href="https://github.com/aniketparmar"
+                href="https://github.com/devaniketparmar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary-blue transform hover:scale-110 transition-all duration-300"
@@ -51,7 +51,7 @@ const Home = () => {
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="https://linkedin.com/in/aniketparmar"
+                href="https://linkedin.com/in/aniket-parmar-a42597239"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary-blue transform hover:scale-110 transition-all duration-300"
