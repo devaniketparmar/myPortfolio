@@ -8,7 +8,7 @@ const Projects = () => {
     {
       id: 1,
       title: 'RawVectors.com',
-      year: '2024',
+      year: '2025',
       description:
         'A full-stack platform offering free, high-quality, editable vector icons for designers and developers. Built an admin panel for managing icon uploads and user permissions, with responsive front-end interfaces.',
       techStack: ['MongoDB', 'Express.js', 'React', 'Node.js', 'MySQL', 'Tailwind CSS'],
@@ -23,7 +23,7 @@ const Projects = () => {
     {
       id: 2,
       title: 'Phlinks.com',
-      year: '2023',
+      year: '2024',
       description:
         'A bio links and URL shortening platform that allows users to publish and monetize their online presence with a single, concise link. Developed a responsive frontend and a robust backend with admin panel for link management.',
       techStack: ['Laravel', 'React', 'PHP', 'MySQL'],
@@ -129,7 +129,6 @@ const Projects = () => {
                         <ExternalLink className="w-4 h-4" />
                         <span>Live Demo</span>
                       </a>
-                      
                     </div>
                   </div>
                 </div>
