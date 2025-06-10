@@ -82,11 +82,11 @@ const Home = () => {
             
             <div className="grid md:grid-cols-3 gap-8 mt-16">
               <div className="text-center p-6 rounded-xl bg-light-blue hover:shadow-lg transition-all duration-300 animate-fade-in-up">
-                <div className="text-4xl font-bold text-primary-blue mb-2">2+</div>
+                <div className="text-4xl font-bold text-primary-blue mb-2">3+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <div className="text-center p-6 rounded-xl bg-light-blue hover:shadow-lg transition-all duration-300 animate-fade-in-up">
-                <div className="text-4xl font-bold text-primary-blue mb-2">10+</div>
+                <div className="text-4xl font-bold text-primary-blue mb-2">100+</div>
                 <div className="text-gray-600">Projects Completed</div>
               </div>
               <div className="text-center p-6 rounded-xl bg-light-blue hover:shadow-lg transition-all duration-300 animate-fade-in-up">
