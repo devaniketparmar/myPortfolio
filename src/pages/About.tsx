@@ -1,37 +1,7 @@
 import React from 'react';
-import { MapPin, GraduationCap, Award, Lightbulb, Users, MessageSquare, Clock, Briefcase, Calendar } from 'lucide-react';
+import { MapPin, GraduationCap, Briefcase, Calendar } from 'lucide-react';
 
 const About = () => {
-  const skillCategories = [
-    {
-      title: 'Languages & Frameworks',
-      skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'PHP', 'React', 'React Native', 'Node.js', 'Express.js', 'Laravel', 'WordPress', 'Shopify', 'Smarty'],
-      icon: '💻'
-    },
-    {
-      title: 'Databases',
-      skills: ['MySQL', 'MongoDB'],
-      icon: '🗄️'
-    },
-    {
-      title: 'Tools & Platforms',
-      skills: ['Git', 'GitHub', 'Postman', 'Redux', 'Chakra UI', 'Tailwind CSS', 'Bootstrap'],
-      icon: '🛠️'
-    },
-    {
-      title: 'Other Technologies',
-      skills: ['Data Structures & Algorithms', 'RESTful APIs', 'Admin Panel Development', 'Authentication Systems'],
-      icon: '⚡'
-    }
-  ];
-
-  const softSkills = [
-    { name: 'Problem Solving', icon: Lightbulb },
-    { name: 'Decision Making', icon: Award },
-    { name: 'Effective Communication', icon: MessageSquare },
-    { name: 'Multitasking', icon: Clock }
-  ];
-
   const experience = [
     {
       title: 'Full Stack Developer',
@@ -165,61 +135,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 animate-fade-in">
-              Technical Skills
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
-              {skillCategories.map((category, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="flex items-center mb-4">
-                    <span className="text-2xl mr-3">{category.icon}</span>
-                    <h3 className="text-xl font-semibold text-gray-900">{category.title}</h3>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill, idx) => (
-                      <span
-                        key={idx}
-                        className="bg-light-blue text-primary-blue px-3 py-1 rounded-full text-sm font-medium hover:bg-primary-blue hover:text-white transition-colors duration-300 cursor-default"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Soft Skills */}
-            <h3 className="text-2xl font-bold text-center text-gray-900 mb-8 animate-fade-in">
-              Soft Skills
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {softSkills.map((skill, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-fade-in-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <skill.icon className="w-8 h-8 text-primary-blue mx-auto mb-3" />
-                  <h4 className="font-semibold text-gray-900 text-sm">{skill.name}</h4>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Education Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 animate-fade-in">
