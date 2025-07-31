@@ -7,7 +7,7 @@ const About = () => {
       title: 'Full Stack Developer',
       company: 'Best I Coders',
       location: 'Rajkot (Remote)',
-      period: 'May 2024 – Present',
+      period: 'Aug 2023 – July 2025',
       achievements: [
         'Built and maintained full-stack applications using MERN stack and MySQL, focusing on scalability and security',
         'Developed an admin panel for RawVectors.com, streamlining content and user management',
@@ -19,7 +19,7 @@ const About = () => {
       title: 'PHP Developer',
       company: 'Communities Heritage Private Limited',
       location: 'Ahmedabad (Onsite)',
-      period: 'August 2023 – May 2024',
+      period: 'Nov 2022 – July 2023',
       achievements: [
         'Developed dynamic web applications using PHP, Laravel, and MySQL, implementing authentication and content management',
         'Enhanced client websites with WordPress and custom PHP, boosting user engagement by 15%',
@@ -32,7 +32,7 @@ const About = () => {
     {
       degree: 'Full Stack Web Development',
       institution: 'Masal School',
-      year: '2023',
+      year: '2022',
       type: 'Certification'
     },
     {
