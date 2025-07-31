@@ -11,7 +11,7 @@ const Projects = () => {
       year: '2025',
       description:
         'A full-stack platform offering free, high-quality, editable vector icons for designers and developers. Built an admin panel for managing icon uploads and user permissions, with responsive front-end interfaces.',
-      techStack: ['MongoDB', 'Express.js', 'React', 'Node.js', 'MySQL', 'Tailwind CSS'],
+      techStack: ['Express.js', 'React', 'Node.js', 'MySQL', 'Tailwind CSS'],
       features: ['User Authentication', 'Icon Search & Download', 'Admin Dashboard', 'Scalable Backend'],
       liveLink: 'https://rawvectors.com',
       githubLink: '#',
