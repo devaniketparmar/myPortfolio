@@ -28,7 +28,7 @@ const Projects = () => {
         'A bio links and URL shortening platform that allows users to publish and monetize their online presence with a single, concise link. Developed a responsive frontend and a robust backend with admin panel for link management.',
       techStack: ['Laravel', 'React', 'PHP', 'MySQL'],
       features: ['URL Shortening', 'Bio Link Creation', 'Ad Monetization', 'Admin Dashboard', 'Responsive Design'],
-      liveLink: 'Phlinks.com',
+      liveLink: 'https://Phlinks.com',
       githubLink: '#',
       logo: phlinklogo,
       logoColor: 'text-green-600',
