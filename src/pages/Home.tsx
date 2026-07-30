@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -17,10 +17,10 @@ const Home = () => {
                 </span>
               </h1>
               <h2 className="text-2xl md:text-3xl font-medium text-gray-600 mb-6">
-                Full Stack Web Developer
+                Software Engineer & Digital Creator
               </h2>
               <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
-                Crafting scalable web solutions with React, Node.js, and Laravel
+                Building scalable web products with full-stack expertise, AI-assisted development, and creative digital strategy.
               </p>
             </div>
 
@@ -77,21 +77,21 @@ const Home = () => {
               Building Digital Excellence
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-12 animate-fade-in-up">
-              Dynamic Full Stack Web Developer skilled in building scalable web applications using React, Node.js, MySQL, MongoDB, Laravel, and WordPress. Experienced in creating robust solutions like RawVectors.com and Jayhovillage, with a passion for delivering user-friendly, innovative digital experiences.
+              Creative Software Engineer and Digital Creator specializing in full-stack development, AI-assisted coding, and online content production. I build modern applications with React, Node.js, Laravel, MySQL, and WordPress while focusing on performance, SEO, security, and scalable architecture.
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 mt-16">
               <div className="text-center p-6 rounded-xl bg-light-blue hover:shadow-lg transition-all duration-300 animate-fade-in-up">
-                <div className="text-4xl font-bold text-primary-blue mb-2">3+</div>
+                <div className="text-4xl font-bold text-primary-blue mb-2">4+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <div className="text-center p-6 rounded-xl bg-light-blue hover:shadow-lg transition-all duration-300 animate-fade-in-up">
-                <div className="text-4xl font-bold text-primary-blue mb-2">100+</div>
-                <div className="text-gray-600">Projects Completed</div>
+                <div className="text-4xl font-bold text-primary-blue mb-2">2</div>
+                <div className="text-gray-600">Featured Platforms</div>
               </div>
               <div className="text-center p-6 rounded-xl bg-light-blue hover:shadow-lg transition-all duration-300 animate-fade-in-up">
-                <div className="text-4xl font-bold text-primary-blue mb-2">100%</div>
-                <div className="text-gray-600">Client Satisfaction</div>
+                <div className="text-4xl font-bold text-primary-blue mb-2">AI</div>
+                <div className="text-gray-600">Assisted Workflows</div>
               </div>
             </div>
           </div>

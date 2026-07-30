@@ -4,10 +4,32 @@ import { MapPin, GraduationCap, Briefcase, Calendar } from 'lucide-react';
 const About = () => {
   const experience = [
     {
+      title: 'YouTube Content Creator',
+      company: 'Rap & English',
+      location: 'Remote',
+      period: 'Sep 2025 – Present',
+      achievements: [
+        'Create and manage online content with a focus on content strategy, video production, and brand growth',
+        'Use audience analytics and SEO optimization to improve reach and engagement',
+        'Combine technology and creativity to produce engaging digital experiences for a global audience'
+      ]
+    },
+    {
       title: 'Full Stack Developer',
-      company: 'Best I Coders',
-      location: 'Rajkot (Remote)',
-      period: 'Aug 2023 – July 2025',
+      company: 'Dsquaretech',
+      location: 'Freelance',
+      period: 'Jul 2025 – Present',
+      achievements: [
+        'Develop modern, scalable web applications using full-stack technologies',
+        'Use AI-assisted coding to accelerate development, automate workflows, and improve productivity',
+        'Build with a strong focus on web performance, SEO, security, and scalable architecture'
+      ]
+    },
+    {
+      title: 'Full Stack Developer',
+      company: 'Best I Coder',
+      location: 'Remote',
+      period: 'Aug 2023 – Jul 2025',
       achievements: [
         'Built and maintained full-stack applications using MERN stack and MySQL, focusing on scalability and security',
         'Developed an admin panel for RawVectors.com, streamlining content and user management',
@@ -19,7 +41,7 @@ const About = () => {
       title: 'PHP Developer',
       company: 'Communities Heritage Private Limited',
       location: 'Ahmedabad (Onsite)',
-      period: 'Nov 2022 – July 2023',
+      period: 'Nov 2022 – Jul 2023',
       achievements: [
         'Developed dynamic web applications using PHP, Laravel, and MySQL, implementing authentication and content management',
         'Enhanced client websites with WordPress and custom PHP, boosting user engagement by 15%',
@@ -30,15 +52,9 @@ const About = () => {
 
   const education = [
     {
-      degree: 'Full Stack Web Development',
-      institution: 'Masal School',
-      year: '2022',
-      type: 'Certification'
-    },
-    {
       degree: 'Diploma in Information Technology',
       institution: 'Gujarat Technical University',
-      year: '2021',
+      year: 'Jun 2021',
       type: 'Diploma'
     }
   ];
@@ -54,7 +70,7 @@ const About = () => {
             </h1>
             <div className="flex items-center justify-center space-x-2 text-gray-600 mb-8">
               <MapPin className="w-5 h-5 text-primary-blue" />
-              <span className="text-lg">Ahmedabad, India</span>
+              <span className="text-lg">Lathidad, India</span>
             </div>
           </div>
         </div>
@@ -68,13 +84,13 @@ const About = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">My Story</h2>
               <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed">
                 <p className="mb-6">
-                  I'm Aniket Parmar, a passionate Full Stack Web Developer from Ahmedabad, India, with expertise in React, Node.js, Laravel, and WordPress. I thrive on solving complex problems and delivering user-friendly, scalable web solutions.
+                  I'm Aniket Parmar, a creative Software Engineer and Digital Creator specializing in full-stack development, AI-assisted coding, and online content production. I develop modern web applications with React, Node.js, Laravel, MySQL, and WordPress.
                 </p>
                 <p className="mb-6">
-                  My experience includes leading the development of RawVectors.com, a comprehensive platform for vector icons, and collaborating on e-commerce projects like Jayhovillage. I'm dedicated to creating digital experiences that not only meet technical requirements but also provide exceptional user experiences.
+                  I use AI tools to accelerate development, automate workflows, and improve productivity while maintaining a strong focus on web performance, SEO, security, and scalable architecture. My featured work includes OneSpotAcademy, a sports academy discovery platform, and Phlinks.com, a bio-link and URL-shortening platform.
                 </p>
                 <p>
-                  When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and mentoring aspiring developers in my community.
+                  Alongside software development, I create YouTube content and work hands-on with content strategy, video production, audience analytics, SEO optimization, and brand growth. I enjoy merging technology and creativity to solve real-world problems and build engaging digital experiences.
                 </p>
               </div>
             </div>

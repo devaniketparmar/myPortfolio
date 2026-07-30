@@ -1,7 +1,7 @@
 import React from 'react';
 import { ExternalLink, Calendar } from 'lucide-react';
 import phlinklogo from '../assets/phlinks.png';
-import oneSpotAcademyLogo from '../assets/onespotacademy.svg';
+import oneSpotAcademyLogo from '../assets/onespot-academy-logo.png';
 
 const Projects = () => {
   const projects = [
@@ -11,8 +11,17 @@ const Projects = () => {
       year: '2026',
       description:
         'OneSpotAcademy is a sports academy discovery platform built to help parents, athletes, and coaching centres find each other through clear, structured academy information.',
-      techStack: ['Web Platform', 'Responsive Design', 'Structured Data'],
-      features: ['Academy Discovery', 'Structured Academy Profiles', 'Sports & Coaching Information', 'Parent-Friendly Experience'],
+      techStack: ['PHP', 'jQuery', 'Bootstrap'],
+      features: [
+        'Academy Search',
+        'Blog Posting',
+        'Admin Panel',
+        'Contact Email',
+        'Promotional Ads',
+        'Payment Integration',
+        'Listing Ads',
+        'Authentication & Password Reset'
+      ],
       liveLink: 'https://onespotacademy.com',
       logo: oneSpotAcademyLogo,
       logoColor: 'text-violet-700',
