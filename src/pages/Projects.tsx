@@ -1,23 +1,22 @@
 import React from 'react';
-import { ExternalLink, Github, Calendar } from 'lucide-react';
+import { ExternalLink, Calendar } from 'lucide-react';
 import phlinklogo from '../assets/phlinks.png';
-import rawvectors from '../assets/rawvectors.svg';
+import oneSpotAcademyLogo from '../assets/onespotacademy.svg';
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'RawVectors.com',
-      year: '2025',
+      title: 'OneSpotAcademy.com',
+      year: '2026',
       description:
-        'A full-stack platform offering free, high-quality, editable vector icons for designers and developers. Built an admin panel for managing icon uploads and user permissions, with responsive front-end interfaces.',
-      techStack: ['Express.js', 'React', 'Node.js', 'MySQL', 'Tailwind CSS'],
-      features: ['User Authentication', 'Icon Search & Download', 'Admin Dashboard', 'Scalable Backend'],
-      liveLink: 'https://rawvectors.com',
-      githubLink: '#',
-      logo: rawvectors,
-      logoColor: 'text-blue-600',
-      bgColor: 'bg-blue-50',
+        'OneSpotAcademy is a sports academy discovery platform built to help parents, athletes, and coaching centres find each other through clear, structured academy information.',
+      techStack: ['Web Platform', 'Responsive Design', 'Structured Data'],
+      features: ['Academy Discovery', 'Structured Academy Profiles', 'Sports & Coaching Information', 'Parent-Friendly Experience'],
+      liveLink: 'https://onespotacademy.com',
+      logo: oneSpotAcademyLogo,
+      logoColor: 'text-violet-700',
+      bgColor: 'bg-violet-50',
       category: 'Full Stack'
     },
     {

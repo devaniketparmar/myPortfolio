@@ -9,14 +9,13 @@ import {
   Clock,
   Globe,
   Server,
-  Smartphone,
   FileCode,
   Layers,
   GitBranch,
-  Package,
   Palette,
   Shield,
-  Zap
+  Zap,
+  Bot
 } from 'lucide-react';
 
 const Skills = () => {
@@ -32,12 +31,10 @@ const Skills = () => {
         { name: 'TypeScript', level: 85, icon: FileCode, color: 'text-blue-600' },
         { name: 'PHP', level: 88, icon: Server, color: 'text-purple-600' },
         { name: 'React', level: 92, icon: Layers, color: 'text-cyan-500' },
-        { name: 'React Native', level: 80, icon: Smartphone, color: 'text-cyan-600' },
         { name: 'Node.js', level: 85, icon: Server, color: 'text-green-600' },
         { name: 'Express.js', level: 85, icon: Zap, color: 'text-gray-700' },
         { name: 'Laravel', level: 88, icon: Shield, color: 'text-red-500' },
-        { name: 'WordPress', level: 85, icon: Globe, color: 'text-blue-700' },
-        { name: 'Shopify', level: 75, icon: Package, color: 'text-green-500' }
+        { name: 'WordPress', level: 85, icon: Globe, color: 'text-blue-700' }
       ]
     },
     {
@@ -61,6 +58,19 @@ const Skills = () => {
         { name: 'Chakra UI', level: 85, icon: Palette, color: 'text-teal-500' },
         { name: 'Tailwind CSS', level: 95, icon: Palette, color: 'text-cyan-500' },
         { name: 'Bootstrap', level: 88, icon: Palette, color: 'text-purple-700' }
+      ]
+    },
+    {
+      category: 'AI Tools',
+      icon: Bot,
+      color: 'from-indigo-500 to-violet-600',
+      skills: [
+        { name: 'Codex', level: 90, icon: Bot, color: 'text-emerald-600' },
+        { name: 'Claude', level: 88, icon: Bot, color: 'text-orange-600' },
+        { name: 'Gemini Code Assist', level: 85, icon: Bot, color: 'text-blue-600' },
+        { name: 'Grok', level: 82, icon: Bot, color: 'text-gray-800' },
+        { name: 'DeepSeek', level: 85, icon: Bot, color: 'text-indigo-600' },
+        { name: 'Ollama', level: 80, icon: Bot, color: 'text-gray-700' }
       ]
     }
   ];
