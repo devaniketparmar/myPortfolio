@@ -51,7 +51,7 @@ const Home = () => {
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="https://linkedin.com/in/aniket-parmar-a42597239"
+                href="https://www.linkedin.com/in/aniket-parmar/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary-blue transform hover:scale-110 transition-all duration-300"

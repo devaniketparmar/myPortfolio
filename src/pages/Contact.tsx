@@ -64,7 +64,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/aniket-parmar-a42597239',
+      href: 'https://www.linkedin.com/in/aniket-parmar/',
       color: 'hover:text-blue-600'
     }
   ];
